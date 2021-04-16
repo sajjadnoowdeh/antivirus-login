@@ -1,24 +1,158 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html,body{
-    width: 100%;
-    height: 100%;
-}
-
-.contaienr{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-}
-.login-animate{
-    width: 55%;
-    height: 100%;
+html,
+body {
+  width: 100%;
+  height: 100%;
 }
 
-.login-form{
-    width: 45%;
-    height: 100%;
+.contaienr {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+/***********login animate*********** */
+.login-animate {
+  height: 100%;
+  background: #c1e9f3;
+  background: linear-gradient(to bottom left, #c1e9f3, #1d9ab8);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  transform-origin: left top;
+  flex-grow: 1.1;
+
+}
+.security{ 
+    width: 47px;
+    padding-bottom: .5rem;
+}
+.security::after{
+  content: '';
+  width: 100%;
+  position: absolute;
+  height: 250px;
+  background: linear-gradient(to left bottom ,#f5efef80 -5%,transparent 50%);
+  transform-origin: left top;
+  /* transform-box: fill-box; */
+  animation: rotateRadar 60s linear infinite;
+}
+
+@keyframes rotateRadar {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(3600deg);
+    }
+}
+.security img{
+    width: 100%;
+
+}
+.anti{
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ***********circles*******8 */
+.circle-radar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-30px);
+}
+.circle{
+  border-radius: 50%;
+  position: absolute;
+  background-color: rgb(245 245 245 / 40%);
+}
+
+
+
+.circle1{
+  animation: animateC1 2s linear  infinite forwards;
+}
+
+.circle2{
+  animation: animateC2 2.5s linear  infinite forwards;
+  animation-delay: .5s;
+
+}
+
+.circle3{
+  animation: animateC3 3s linear  infinite forwards;
+  animation-delay: 2s;
+
+}
+.circle4{
+
+  animation: animateC4 3.5s linear  infinite forwards;
+  animation-delay: 2s;
+}
+
+@keyframes animateC1 {
+  0%{
+    width: 0px;
+    height: 0;
+    opacity: .5;
+  }
+  100%{
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+  }
+}
+
+@keyframes animateC2 {
+  0%{
+    width: 0;
+    height: 0;
+    opacity: .5;
+  }
+  100%{
+    width: 550px;
+    height: 550px;
+    opacity: 0;
+  }
+}
+@keyframes animateC3{
+  0%{
+    width: 0;
+    height: 0;
+    opacity: .5;
+  }
+  100%{
+    width: 600px;
+    height: 600px;
+    opacity: 0;
+  }
+}
+
+@keyframes animateC4{
+  0%{
+    width: 0;
+    height: 0;
+    opacity: .5;
+  }
+  100%{
+    width: 650px;
+    height: 650px;
+    opacity: 0;
+  }
+}
+
+
+
+
+.login-form {
+  flex-grow: 1;
+  height: 100%;
 }
