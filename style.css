@@ -201,3 +201,26 @@ input[type="checkbox"], input[type="checkbox"] + label{
   font-size: 10px;
   color: #7e7e7e79;
 }
+
+@media (max-width:968px) {
+  .contaienr {
+    flex-direction: column;
+  }
+  .login-animate {
+    width: 100%;
+  }
+  .login-form{
+    width: 100%;
+  }
+  .main-username, .main-password,.code-password{
+    padding: 13px 0;
+  }
+
+  .login-title {
+    font-size: 15px;
+  }
+  .login-sub-title {
+    font-size: 13px;
+  }
+  
+}
