@@ -1,42 +1,57 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Antivirus login</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="contaienr">
-        <div class="login-animate">
-            <div class="security">
-                <img src="./security.svg" alt="security">
-            </div>
-             <div class="circle-radar">
-                 <div class="circle circle1"></div>
-                 <div class="circle circle2"></div>
-                 <div class="circle circle3"></div>
-                 <div class="circle circle4"></div>
-                 <div class="circle circle5"></div>
-             </div>
-            <p class="anti">Antivirus</p>
+      <div class="login-animate">
+        <div class="security">
+          <img src="./security.svg" alt="security" />
         </div>
-        <div class="login-form">
-            <a href="#">ورود</a>
-            <div class="section-form">
-                <h2>ورود به حساب کاربری</h2>
-                <p>جهت ورود به برنامه نام کاربری ورمزعبور خود را وارد نمایید</p>
-                <form>
-                    <input type="text" placeholder="پست الکترونیکی"><br>
-                    <input type="password" placeholder="رمز عبور"><br>
-                    <input type="password" placeholder="کد امنیتی">
-                    <img src="./captcha.png" alt="capcha">
-                    <button class="btn">ورود</button>
-                    <input type="checkbox" class="remember">
-                </form>
-            </div>
-
+        <div class="circle-radar">
+          <div class="circle circle1"></div>
+          <div class="circle circle2"></div>
+          <div class="circle circle3"></div>
+          <div class="circle circle4"></div>
+          <div class="circle circle5"></div>
         </div>
+        <p class="anti">Antivirus</p>
+      </div>
+      <div class="login-form">
+        <div class="section-form">
+          <a href="#" class="login">ورود</a>
+          <form>
+            <h2 class="login-title">ورود به حساب کاربری</h2>
+            <p class="login-sub-title">جهت ورود به برنامه نام کاربری ورمزعبور خود را وارد نمایید</p>
+            <div>
+              <i class="fa fa-user"></i>
+              <input type="text" class="username" placeholder="پست الکترونیکی" />
+            </div>
+            <div>
+              <i class="fa fa-lock"></i>
+              <input type="password" class="password" placeholder="رمز عبور" />
+            </div>
+            <div class="code-password">
+              <i class="fas fa-keyboard keyboard"></i>
+              <input type="password" class="input-capcha" placeholder="کد امنیتی" />
+              <div class="main-refresh">
+                <img src="./c.png" alt="capcha" class="capcha" />
+                <i  class="fas fa-sync-alt icon-refresh"></i>
+              </div>
+            </div>
+            <button class="btn">ورود</button>
+            <div>
+              <input type="checkbox" class="remember" />
+              <label>مرا بخاطر پسپار</label>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

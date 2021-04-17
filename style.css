@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "vazir";
+  src: url(./vazir-font-v8.2.1/Vazir.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +11,10 @@ html,
 body {
   width: 100%;
   height: 100%;
+  font-family: "vazir";
+}
+a {
+  text-decoration: none;
 }
 
 .contaienr {
@@ -16,6 +24,7 @@ body {
 }
 /***********login animate*********** */
 .login-animate {
+  width: 57%;
   height: 100%;
   background: #c1e9f3;
   background: linear-gradient(to bottom left, #c1e9f3, #1d9ab8);
@@ -27,49 +36,47 @@ body {
   overflow: hidden;
   transform-origin: left top;
   flex-grow: 1.1;
-
 }
-.security{ 
-    width: 47px;
-    padding-bottom: .5rem;
+.security {
+  width: 47px;
+  padding-bottom: 0.5rem;
 }
-.security::after{
-  content: '';
+.security::after {
+  content: "";
   width: 100%;
   position: absolute;
   height: 250px;
-  background: linear-gradient(to left bottom ,#f5efef80 -5%,transparent 50%);
+  background: linear-gradient(to left bottom, #f5efef80 -5%, transparent 50%);
   transform-origin: left top;
   /* transform-box: fill-box; */
   animation: rotateRadar 60s linear infinite;
 }
 
 @keyframes rotateRadar {
-    0%{
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    100%{
-        transform: rotate(3600deg);
-    }
+  100% {
+    transform: rotate(3600deg);
+  }
 }
-.security img{
-    width: 100%;
-
+.security img {
+  width: 100%;
 }
-.anti{
-    color: white;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+.anti {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* ***********circles*******8 */
-.circle-radar{
+.circle-radar {
   display: flex;
   justify-content: center;
   align-items: center;
   transform: translateY(-30px);
 }
-.circle{
+.circle {
   width: 400px;
   height: 400px;
   border-radius: 50%;
@@ -80,38 +87,117 @@ body {
 }
 
 @keyframes aniamteCircles {
-  0%{
+  0% {
     transform: scale(0);
-    opacity: .5;
+    opacity: 0.5;
   }
-  100%{
+  100% {
     transform: scale(1.1);
     opacity: 0;
   }
 }
 
-
-.circle2{
-  animation-delay: .5s;
-
+.circle2 {
+  animation-delay: 0.5s;
 }
 
-.circle3{
+.circle3 {
   animation-delay: 1s;
-
 }
-.circle4{
+.circle4 {
   animation-delay: 1.5s;
 }
-.circle5{
+.circle5 {
   animation-delay: 2s;
 }
 
 /* ******login-form******** */
 
-
 .login-form {
-  flex-grow: 1;
+  width: 43%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  direction: rtl;
+}
+.section-form {
+  position: relative;
   height: 100%;
-  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 63%;
+}
+form input {
+  border: 0;
+  border-bottom: 1px solid rgba(185, 185, 185, 0.712);
+  padding: 10px 0;
+  outline: none;
+}
+form input::placeholder {
+  font-family: "vazir";
+  color: #7e7e7e79;
+}
+.login-title {
+  font-size: 19px;
+}
+.login-sub-title {
+  color: #7e7e7eb0;
+  padding-bottom: 1rem;
+}
+.code-password {
+  display: flex;
+}
+.capcha {
+  width: 83px;
+  margin: 8px 48px 0 0;
+}
+
+form i {
+  position: absolute;
+  left: 5%;
+  color: #7e7e7e79;
+  font-size: 12px;
+  transform: translateY(10px);
+}
+.keyboard {
+  left: 41%;
+}
+.username,
+.password {
+  width: 100%;
+}
+
+.input-capcha {
+  width: 60%;
+}
+.main-refresh {
+  display: flex;
+  align-items: center;
+}
+.icon-refresh {
+  left: 0;
+  color: black;
+}
+
+.btn {
+  padding: 5px 0;
+  border: 0;
+  background-color: rgb(8, 137, 189);
+  color: white;
+  font-family: "vazir";
+}
+input[type="checkbox"]{
+ transform: translateY(2px);
+ opacity: .2;
+}
+input[type="checkbox"], input[type="checkbox"] + label{
+  font-size: 10px;
+  color: #7e7e7e79;
 }
